@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Mashup</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/wikiquote-api.js"></script>
+    <script src="js/app.js">
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+
+  <body>
+    <div class="container main-bg mt-5">
+      <div class="header text-center">
+        <h1>Quote Mashup</h1>
+        <h4>Create a quote mashup by searching for random quotes from two famous people.<br />
+        Don't like your mashup? Search only input once!</h4>
+        <a class="btn btn-primary">Generate An Example</a>
+      </div>
+
+      <div class="row">
+        <div class="span4">
+          <form id="form1" class="search-form mr-3" method="post">
+            <input id="search-box1" class="search-box" type="text" />
+            <input type="submit" value="Search" class="btn btn-outline-primary btn-sm" />
+          </form>
+          <div class="quotes"></div>
+        </div>
+
+        <div class="span4">
+          <form id="form2" class="search-form" method="post">
+            <input id="search-box2" class="search-box" type="text" />
+            <input type="submit" value="Search" class="btn btn-outline-primary btn-sm" />
+          </form>
+          <div class="quotes"></div>
+        </div>
+      </div>
+
+      <div id="mashup">
+      </div>
+    </div>
+    <div class="container footer">
+      <p class="text-center">A Gimna Katugampala Production</p>
+    </div>
+  </body>
+</html>
